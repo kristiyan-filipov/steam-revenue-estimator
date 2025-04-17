@@ -1,6 +1,6 @@
 const axios = require('axios');
 const input = (question) => require('readline-sync').question(question);
-let appId = input("App game link: ");
+let appId = input("Input store page URL: ");
 appId = appId.substring(appId.indexOf('/app/') + 5, appId.indexOf('/', appId.indexOf('/app/') + 5));
 async function getGameDetails(appId) {
     const gameData = (await axios.get(`https://store.steampowered.com/api/appdetails?appids=${appId}&cc=us&l=en`)).data[appId].data;
@@ -75,7 +75,6 @@ function estimateRevenue(price, releaseDate, totalReviews, reviewScore){
     console.log("Estimated sales to review ratio: " + ratio)
     console.log("Estimated sales: " + sales.toLocaleString())
     console.log("Estimated gross revenue: $" + gross_revenue.toLocaleString());
-
     console.log("Estimated net revenue: $" + net_revenue.toLocaleString())
 }
 main();
