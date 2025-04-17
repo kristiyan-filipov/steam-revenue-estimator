@@ -6,8 +6,8 @@ A Node.js script that estimates the revenue of a given Steam game.
 
 # Installation and usage
 
-- Install Node.js.
-- Clone the repository.
+- Install [Node.js](https://nodejs.org/en).
+- Clone this repository.
 - Open the repository directory inside a terminal.
 - Run: `npm install`
 - Run: `node steam-revenue-estimator.js`
