@@ -26,31 +26,31 @@ function estimateRevenue(price, releaseDate, totalReviews, reviewScore){
     let releaseDateRatio
     let reviewScoreRatio
     switch(releaseDate){
-        case 2013:
+        case "2013":
             releaseDateRatio = 90
             break;
-        case 2014:
+        case "2014":
             releaseDateRatio = 80
             break;
-        case 2015:
+        case "2015":
             releaseDateRatio = 70
             break;
-        case 2016:
+        case "2016":
             releaseDateRatio = 60
             break;
-        case 2017:
+        case "2017":
             releaseDateRatio = 50
             break;
-        case 2018:
+        case "2018":
             releaseDateRatio = 40
             break;
-        case 2019:
+        case "2019":
             releaseDateRatio = 30
         default:
-            if (releaseDate <= 2012){
+            if (releaseDate <= "2012"){
                 releaseDateRatio = 90
             }
-            else if (releaseDate >= 2019){
+            else if (releaseDate >= "2019"){
                 releaseDateRatio = 30
             }
     }
